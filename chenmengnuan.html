@@ -1,0 +1,666 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no"/>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script src="jquery-2/jquery-2.1.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap-carousel.js"></script>
+<!--<script src="js/bootstrap-collapse.js"></script>-->
+<script src="js/swiper.js"></script>
+<script src="js/swiper.jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="responsive-nav.js-master/responsive-nav.js-master/responsive-nav.css">
+<script src="responsive-nav.js-master/responsive-nav.js-master/responsive-nav.js"></script>
+<style type="text/css">
+body {
+	background: url(image/341032037.jpg) no-repeat center fixed;
+	/*fixed:固定*/
+	background-size: cover;
+}
+.fixed_button {
+	position: fixed;
+	top: 80px;
+}
+.subject-module {
+	margin: 10px;
+	/*	background-color:rgba(225,225,225,0.8); */
+	text-align: center;
+}
+.si .swiper-container {
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.swiper-slide {
+	background-position: center;
+	background-size: cover;
+	width: 100px;
+	height: 100px;
+}
+.song .swiper-container {
+	width: 95%;
+	padding-top: 10px;
+	padding-bottom: 60px;
+}
+.song .swiper-slide {
+	height: 135px;
+	width: 135px;
+}
+.sing {
+	margin-right: 8px;
+}
+.pic_rotate:hover {
+	transform: rotate(360deg);
+	-ms-transform: rotate(360deg); 	/* IE 9 */
+	-moz-transform: rotate(360deg); 	/* Firefox */
+	-webkit-transform: rotate(360deg); /* Safari 和 Chrome */
+	-o-transform: rotate(360deg); 	/* Opera */
+}
+.shadow:hover {
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000)";
+ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+.pngshadow img:hover {
+	/* margin:4px;*/
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	/*box-shadow: 0 0 12px #000;*/box-shadow: 0 0 12px #FFF;
+	margin: 1px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000)";
+ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+.pngshadow img {
+/*	margin:6px;*/
+}
+.imgbox {
+	height: 80px;
+}
+</style>
+<link href="css/swiper.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="all"> 
+  <!--头部：开始-->
+  <div class="head container">
+    <div style="margin:10px;"></div>
+    
+    <!--警告框开始-->
+    <div class="alert alert-warning alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <strong>【欢迎你~】</strong><p style="font-size:12px;">这是我写的第一个网站，能独立完成还是蛮开心的。作业期间还有几场考试，到现在作业全部完成，视力下降了1、200度<strong>【很好】</strong>。有的细节很难处理好，一直和它死磕，看来需要更多练习掌握熟练度，但最后每完成一个小版块都很有成就感。写到后面代码越来越多，调整的时候偶尔会漏一两个符号，导致大部分排版的奔溃。然后一点一点去找问题出现在哪里，现在已有及时写注释的习惯。</p></div>
+    <!--警告框结束--> 
+    
+    <!--空白左边-->
+    <div class="col-sm-11"></div>
+    <!--左边结束--> 
+    
+    <!--公告右边-->
+    <div class="col-md-1"> 
+      <!--弹出开始--> 
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> 公告 </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">公告</h4>
+            </div>
+            <div class="modal-body">
+              <p>欢迎浏览陈梦暖的博客。</p>
+            </div>
+            <!--<div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>-->
+          </div>
+        </div>
+      </div>
+      <!--弹出结束--> 
+      
+    </div>
+    <!--公告结束-->
+    
+    <div style="margin:20px;"></div>
+  </div>
+  <!--头部：结束--> 
+  <!--主体：开始-->
+  <div class="main" style="margin-top:10px;">
+    <div class="container">
+      <div class="col-sm-3 hidden-xs col-md-3">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#aaa" style="background-color:#FFF; width:200px;"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <div id="aaa" class="navbar-collapse collapse hidden-xs">
+          <div class="list-group fixed_button"> 
+            
+            
+            <button type="button" class="btn btn-warning" title="提示"
+            data-container="body" data-toggle="popover" data-placement="right"
+            data-content="可点击栏目相应提示按钮，获取操作指示。点击栏目标题可打开/关闭栏目内容。">　　　浏览提示　　　</button>
+            <br>
+            <button type="button" class="btn btn-warning" title="提示"
+            data-container="body" data-toggle="popover" data-placement="right"
+            data-content="此栏目可无视。">　　　个人简介　　　</button>
+            <br>
+            <button type="button" class="btn btn-warning" title="提示"
+            data-container="body" data-toggle="popover" data-placement="right"
+            data-content="点唱片可播放/暂停背景音乐，滑动查看更多专辑，手机视图唱片切换显示效果，增加旋转功能。">　　　音乐聆听　　　</button>
+            <br>
+            <button type="button" class="btn btn-warning" title="提示"
+            data-container="body" data-toggle="popover" data-placement="right"
+            data-content="相应书名按钮可打开/关闭书籍简介，鼠标滑过书籍闪动。">　　　阅读栏目　　　</button>
+            <br>
+            <button type="button" class="btn btn-warning" title="提示"
+            data-container="body" data-toggle="popover" data-placement="right"
+            data-content="左右箭头可切换不同景点照片及相应简介">　　　学校风光　　　</button>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-9">
+        <div class="subject" style="background-color:rgba(0,0,0,0.2); color:#FFF;" id="top">
+          <div class="row" style="margin:20px;"></div>
+          <!--简介：开始-->
+          <div class="row" style="margin-left: 10px; margin-right:10px;background-color:rgba(0,0,0,0.3);text-align:center;"> 
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default" style="background-color:rgba(74,102,68,0.5)">
+              <div class="panel-heading" style="background-color:rgba(74,102,68,0.5); color:#CCC;">
+                <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" 
+                href="#collapseOne"> 2015-2016 </a> </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body" style="color:#CCC; font-size:10px;">　　　　在工作上，本人于2015-2016学年任职于团总支组织部，积极配合院、系及班级的各项工作，曾获得校庆六十五周年“优秀志愿者”称号。在学业上，2015-2016学年本人以84.95的总成绩排名班级第二名，曾获得省“挑战杯--彩虹人生”创新创效创业大赛二等奖及国家励志奖学金。在生活上，获得“优秀军训学员”称号，所在宿舍曾获得五星级宿舍等称号。
+经过大一一学年的学生工作锻炼与学习，使自己各个方面的综合能力得到了提高。希望能在今后的学习生活中继续做到品学兼优，成为德智体全面发展的共青团员！
+ </div>
+              </div>
+            </div>
+            
+            <div class="panel panel-default" style="background-color:rgba(69,87,101,0.5)">
+              <div class="panel-heading" style="background-color:rgba(69,87,101,0.5); color:#CCC;">
+                <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" 
+                href="#collapseTwo"> 2016-2017 </a> </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body" style="color:#CCC; font-size:10px;">肯定比大一的时候进步啦！</div>
+              </div>
+            </div>
+            
+            <div class="panel panel-default" style="background-color:rgba(0,0,0,0.5);">
+              <div class="panel-heading" style="background-color:rgba(0,0,0,0.5); color:#CCC;">
+                <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" 
+                href="#collapseThree"> 2017-2018 </a> </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body" style="color:#CCC; font-size:10px;">问你怕不怕！</div>
+              </div>
+            </div>
+          </div>
+          
+          </div>
+          <!--简介：结束--> 
+          <!--电脑版的专辑页面-->
+          <div class=" hidden-xs row" style="margin:10px;"></div>
+          <div class=" hidden-xs row" style="margin: 10px;background-color:rgba(0,0,0,0.6);text-align:center;">
+            <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 h1 text-center"><a class="sonclick" style="color:#FFF">单曲推荐</a></div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="row si">
+                <div class="sshow">
+                  <div class="swiper-container" id="sImg">
+                    <div class="swiper-wrapper music">
+                      <div class="swiper-slide img-responsive">
+                        <audio id="music1" src="music/David Guetta-Justin Bieber - 2U.mp3"  loop="loop">你的浏览器不支持audio标签。</audio>
+                        <a href="javascript:playPause1();"><img src="image/z4.jpg"id="music_btn1" border="0" class="img-responsive"></a>
+                        <h2>2U</h2>
+                        <p>David Guettaft/Justin Bieber</p>
+                      </div>
+                      <div class="swiper-slide">
+                        <audio id="music2" src="music/床边故事.mp3"  loop="loop">你的浏览器不支持audio标签。</audio>
+                        <a href="javascript:playPause2();"><img src="image/z1.jpg"id="music_btn2" border="0" class="img-responsive"></a>
+                        <h2>跨时代</h2>
+                        <p>周杰伦</p>
+                      </div>
+                      <div class="swiper-slide">
+                        <audio id="music3" src="music/齐天.mp3"  loop="loop">你的浏览器不支持audio标签。</audio>
+                        <a href="javascript:playPause3();"><img src="image/z2.jpg"id="music_btn3" border="0" class="img-responsive"></a>
+                        <h2>齐天</h2>
+                        <p>华晨宇</p>
+                      </div>
+                      <div class="swiper-slide">
+                        <audio id="music4" src="music/苏打绿 - 我好想你.mp3"  loop="loop">你的浏览器不支持audio标签。</audio>
+                        <a href="javascript:playPause4();"><img src="image/z5.jpg"id="music_btn4" border="0" class="img-responsive"></a>
+                        <h2>秋：故事</h2>
+                        <p>苏打绿</p>
+                      </div>
+                      <div class="swiper-slide">
+                        <audio id="music5" src="music/Mark Ronson Bruno Mars - Uptown Funk.mp3"  loop="loop">你的浏览器不支持audio标签。</audio>
+                        <a href="javascript:playPause5();"><img src="image/z7.jpg"id="music_btn5" border="0" class="img-responsive"></a>
+                        <h2>Uptown Funk</h2>
+                        <p>Mark Ronson/Bruno Mars</p>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--电脑专辑结束--> 
+          <!--手机版的专辑板块-->
+          <div class="visible-xs">
+            <div class="row" style="margin-left: 10px; margin-right:10px;background-color:rgba(0,0,0,0.6);text-align:center;">
+              <div class=" col-xs-12 h1 text-center"><a class="sonclick" style="color:#FFF">单曲推荐</a></div>
+              <div class="sshow">
+                <div class="row song" style="margin:0px;">
+                  <div class="swiper-container" id="song">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide sing s">
+                        <audio id="music1" src="music/David Guetta-Justin Bieber - 2U.mp3"  loop="loop">你的浏览器不支持audio标签。</audio>
+                        <a href="javascript:playPause1();"><img src="image/z4.jpg" class="img-responsive img-circle img-thumbnail pic_rotate" id="music_btn1" border="0"></a> </div>
+                      <div class="swiper-slide sing s">
+                        <audio id="music2" src="music/床边故事.mp3" loop>你的浏览器不支持audio标签。</audio>
+                        <a href="javascript:playPause2();"><img src="image/z1.jpg" class="img-responsive img-circle img-thumbnail pic_rotate" id="music_btn2" border="0"></a> </div>
+                      <div class="swiper-slide sing s">
+                        <audio id="music3" src="music/齐天.mp3"  loop="loop">你的浏览器不支持audio标签。</audio>
+                        <a href="javascript:playPause3();"><img src="image/z2.jpg" class="img-responsive img-circle img-thumbnail pic_rotate" id="music_btn3" border="0"></a> </div>
+                      <div class="swiper-slide sing s">
+                        <audio id="music4" src="music/苏打绿 - 我好想你.mp3"  loop="loop">你的浏览器不支持audio标签。</audio>
+                        <a href="javascript:playPause4();"><img src="image/z5.jpg" class="img-responsive img-circle img-thumbnail pic_rotate" id="music_btn4" border="0"></a> </div>
+                      <div class="swiper-slide sing s">
+                        <audio id="music5" src="music/Mark Ronson Bruno Mars - Uptown Funk.mp3"  loop="loop">你的浏览器不支持audio标签。</audio>
+                        <a href="javascript:playPause5();"><img src="image/z7.jpg" class="img-responsive img-circle img-thumbnail pic_rotate" id="music_btn5" border="0"></a> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--手机专辑结束--> 
+          <!--书：开始-->
+          <div class="row" style="margin: 10px;background-color:rgba(0,0,0,0.3);text-align:center;">
+            <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 h1 text-center"><a class="bonclick" style="color:#FFF">书籍推荐</a></div>
+            <div class="bshow">
+              <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3"><a id="e1" href="image/时间简史.jpg"><img class="img-responsive imgbook" src="image/book4.jpg"></a>
+                <div style="margin:5px;"></div>
+                <p><!--时间简史-->
+                  <button id="but11" data-target="#bk1" style="background-color:#000; position:0.5; color:#CCC; ">时间简史</button>
+                </p>
+                <div style="margin:1px;"></div>
+                <div id="bk1"><span style="font-size:9px; color:#CCC;">《时间简史》是一部物理通俗化的科普范本，讲述了狭义相对论以及时间、宇宙的起源等宇宙学。</span></div>
+              </div>
+              <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3"><a id="e1" href="image/时间简史.jpg"><img class="img-responsive imgbook" src="image/book1.jpg"></a>
+                <div style="margin:5px;"></div>
+                <p><!--时间简史-->
+                  <button id="but12" data-target="#bk2" style="background-color:#000; position:0.5; color:#CCC; ">西游记</button>
+                </p>
+                <div style="margin:1px;"></div>
+                <div id="bk2"><span style="font-size:9px; color:#CCC;">《西游记》是中国古代第一部浪漫主义章回体长篇神魔小说。该书以“唐僧取经”这一历史事件为蓝本，通过作者的艺术加工，深刻地描绘了当时的社会现实。主要描写了孙悟空出世，后遇见了唐僧、猪八戒和沙和尚三人，一路降妖伏魔，保护唐僧西行取经，经历了九九八十一难，终于到达西天见到如来佛祖，最终五圣成真的故事。</span></div>
+              </div>
+              <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3"><a id="e1" href="image/时间简史.jpg"><img class="img-responsive imgbook" src="image/book3.jpg"></a>
+                <div style="margin:5px;"></div>
+                <p><!--时间简史-->
+                  <button id="but13" data-target="#bk3" style="background-color:#000; position:0.5; color:#CCC; ">红楼梦</button>
+                </p>
+                <div style="margin:1px;"></div>
+                <div id="bk3"><span style="font-size:9px; color:#CCC;">《红楼梦》是一部具有世界影响力的人情小说作品，举世公认的中国古典小说巅峰之作，中国封建社会的百科全书，传统文化的集大成者。小说以贾、史、王、薛四大家族的兴衰为背景，以贾府的家庭琐事、闺阁闲情为脉络，以贾宝玉、林黛玉、薛宝钗的爱情婚姻故事为主线，刻画了以贾宝玉和金陵十二钗为中心的正邪两赋有情人的人性美和悲剧美。通过家族悲剧、女儿悲剧及主人公的人生悲剧，揭示出封建末世危机。</span></div>
+              </div>
+              <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3"><a id="e1" href="image/时间简史.jpg"><img class="img-responsive imgbook" src="image/book2.jpg"></a>
+                <div style="margin:5px;"></div>
+                <p><!--时间简史-->
+                  <button id="but14" data-target="#bk4" style="background-color:#000; position:0.5; color:#CCC; ">湘雅摭残</button>
+                </p>
+                <div style="margin:1px;"></div>
+                <div id="bk4"><span style="font-size:9px; color:#CCC;">《摭残》共收录作者634家，诗近8000首，亦不收生人作品。时间起自清道光末，迄于抗日战争之前，跨度约近一百年。编者初辑此书时，欲仿效邓氏编例，称为《沅湘耆旧集续编》。</span></div>
+              </div>
+            </div>
+          </div>
+          <!--书：结束--> 
+          <!--获奖：开始-->
+          <div class="row" style="margin: 10px;background-color:rgba(0,0,0,0.6);text-align:center;"><!--225,225,225,0.3-->
+            <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 h1 text-center"><a class="wonclick" style="color:#FFF">获奖情况</a></div>
+            <div class="wshow">
+              <div class="visible-xs col-xs-1"></div>
+              <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4 imgbox">
+                <div class="pngshadow">
+                  <div><img src="image/m1.png" class="img-responsive center-block"></div>
+                </div>
+                <div class=" visible-xs col-xs-1"></div>
+              </div>
+              <div class=" visible-xs col-xs-1"></div>
+              <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4 imgbox">
+                <div class="pngshadow">
+                  <div><img src="image/m2.png" class="img-responsive center-block"></div>
+                </div>
+                <div class=" visible-xs col-xs-1"></div>
+              </div>
+              <div class=" visible-xs col-xs-1"></div>
+              <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4 imgbox">
+                <div class="pngshadow">
+                  <div><img src="image/m3.png" class="img-responsive center-block"></div>
+                </div>
+                <div class=" visible-xs col-xs-1"></div>
+              </div>
+              <div class=" visible-xs col-xs-1"></div>
+              <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4 imgbox">
+                <div class="pngshadow">
+                  <div><img src="image/m4.png" class="img-responsive center-block"></div>
+                </div>
+                <div class=" visible-xs col-xs-1"></div>
+              </div>
+              <div class=" visible-xs col-xs-1"></div>
+              <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4 imgbox">
+                <div class="pngshadow">
+                  <div><img src="image/m5.png" class="img-responsive center-block"></div>
+                </div>
+                <div class=" visible-xs col-xs-1"></div>
+              </div>
+              <div class=" visible-xs col-xs-1"></div>
+              <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4 imgbox">
+                <div class="pngshadow">
+                  <div><img src="image/m6.png" class="img-responsive center-block"></div>
+                </div>
+                <div class=" visible-xs col-xs-1"></div>
+              </div>
+            </div>
+          </div>
+          <!--获奖：结束--> 
+          <!--播放开始-->
+          <div class="row" style="margin-left: 10px; margin-right:10px;background-color:rgba(0,0,0,0.3);text-align:center;"> 
+            <!-- 标题 -->
+            <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 h1 text-center"><a class="clgonclick" style="color:#FFF">学院简介</a></div>
+            <div class="clgshow">
+              <div class="row" style="margin:10px;"></div>
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> 
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                </ol>
+                
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active col-sm-12"> <img src="image/X1.jpg" alt="...">
+                    <div class="carousel-caption">
+                      <h4>足球场</h4>
+                      <p style="font-size:10px;">我就是奔着学校的足球场来的。目前学校里的是两个5人场，2018年体育馆竣工时，将会有一个大型足球场，欢迎大家来踢球。</p>
+                    </div>
+                  </div>
+                  <div class="item col-sm-12"> <img src="image/X2.jpg" alt="...">
+                    <div class="carousel-caption">
+                      <h4>实训楼</h4>
+                      <p style="font-size:10px;">感谢设计者设计在实训楼和教学楼中间的过道，时间赶的时候就靠它了。</p>
+                    </div>
+                  </div>
+                  <div class="item col-sm-12"> <img src="image/X3.jpg" alt="...">
+                    <div class="carousel-caption">
+                      <h4>大石头广场</h4>
+                      <p style="font-size:10px;">还记得在这里玩滑板、撕名牌的时候。</p>
+                    </div>
+                  </div>
+                  <div class="item col-sm-12"> <img src="image/X4.jpg" alt="...">
+                    <div class="carousel-caption">
+                      <h4>天台</h4>
+                      <p style="font-size:10px;">这里的风光很美，特别是晚霞。</p>
+                    </div>
+                  </div>
+                  <div class="item col-sm-12"> <img src="image/X5.jpg" alt="...">
+                    <div class="carousel-caption">
+                      <h4>教学楼</h4>
+                      <p style="font-size:10px;">专业原因，很少在这里上课。挺庆幸的，因为这里没空调哈哈哈。</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Controls --> 
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+            </div>
+          </div>
+          <!--播放结束-->
+          <div class="row" style="margin:10px;"></div>
+          <!-- 返回：开始 -->
+          <div class="row" style="margin-left: 10px; margin-right:10px;background-color:rgba(0,0,0,0.3);text-align:center;"> 
+            <!-- 标题 -->
+            <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 h5 text-center"><a class="back-to-top" href="首页.html" style="color:#FFF;"> 返回顶部 </a></div>
+            <div class="row" style="margin:4px;"></div>
+          </div>
+        </div>
+        <!-- 返回：结束 --> 
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!--主体：结束--> 
+<!--页脚：开始-->
+<div class="footer row" style="background:#000; color:#CCC; ">
+  <div class="container"> 
+    <!--第一部分开始-->
+    <div class="col-sm-4 col-md-4 col-xs-12">
+      <div class="col-md-1 col-sm-1 col-xs-1"></div>
+      <div class="col-md-10 col-sm-10 col-xs-10">
+        <div class="h3" style="color:#FFF;">联系博主</div>
+        <div class="row" style="margin:10px; background-color:#000;"></div>
+        <div style="font-size:11px;">
+          <p>联系本人：陈小姐</p>
+          <p>联系电话：134********</p>
+          <p>邮箱地址：505002663@qq.com</p>
+          <p>QQ号码：505002663</p>
+        </div>
+      </div>
+      <div class="col-md-1 col-sm-1 col-xs-1"></div>
+    </div>
+    <!--第一部分结束--> 
+    <!--第二部分开始-->
+    <div class="col-sm-4 col-md-4 col-xs-12">
+      <div class="col-md-1 col-sm-1 col-xs-1"></div>
+      <div class="col-md-10 col-sm-10 col-xs-10">
+        <div class="h3" style="color:#FFF;">专业信息</div>
+        <div class="row" style="margin:10px; background-color:#000;"></div>
+        <div style="font-size:11px;">
+          <p>专业名称：物联网应用技术</p>
+          <p>专业课程：物联网综合实训、传感器应用技术</p>
+          <p>　　　　　RFID应用技术、无线传感技术</p>
+          <p>　　　　　物联网工程布线</p>
+          <p>重点课程：网页设计与制作、Linux系统管理</p>
+          <p>　　　　　网络数据开发、Android开发技术</p>
+          <p>　　　　　计算机网络基础</p>
+          <p>　　　　　Java程序设计、C程序设计</p>
+          <p>　　　　　C#程序设计</p>
+        </div>
+      </div>
+      <div class="col-md-1 col-sm-1 col-xs-1"></div>
+    </div>
+    <!--第二部分结束--> 
+    <!--第三部分开始-->
+    <div class="col-sm-4 col-md-4 col-xs-12">
+      <div class="col-md-1 col-sm-1 col-xs-1"></div>
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="h3" style="color:#FFF;">微信/QQ二维码</div>
+        <div class="row" style="margin:10px; background-color:#000;"></div>
+        <div style="font-size:12px;"> <img style="" class="img-responsive col-md-4 col-sm-6 col-xs-6" src="image/e1.jpg"> <img style="" class="img-responsive col-md-4 col-sm-6 col-xs-6" src="image/e2.jpg">
+          <div class="hidden-xs col-md-4"></div>
+        </div>
+      </div>
+      <div class="col-md-1 col-sm-1 col-xs-1"></div>
+    </div>
+    <!--第三部分结束-->
+    
+    <div class="row" style="margin:20px; background-color:#000;"></div>
+  </div>
+</div>
+<!--页脚：结束-->
+</div>
+</div>
+<p class="Img1"></p>
+<script language="javascript"> 
+
+/*提示*/
+/*$('.btn').popover('toggle')*/
+$(function (){
+    $("[data-toggle='popover']").popover();
+});
+
+/*学院点击*/
+$(document).ready(function(){
+  $(".clgonclick").click(function(){
+    $(".clgshow").fadeToggle(10);
+  });
+});
+/*奖项点击*/
+$(document).ready(function(){
+  $(".wonclick").click(function(){
+    $(".wshow").fadeToggle(10);
+  });
+});
+/*歌曲点击*/
+$(document).ready(function(){
+  $(".sonclick").click(function(){
+    $(".sshow").fadeToggle(10);
+  });
+});
+/*歌曲点击*/
+$(document).ready(function(){
+  $(".bonclick").click(function(){
+    $(".bshow").fadeToggle(10);
+  });
+});
+    $('.carousel').carousel({
+      interval: 2000
+    })
+
+
+var mySwiper = new Swiper('#CLG',{
+scrollbar:'#clg',
+slidesPerView: 3,
+centeredSlides: true,
+
+  }); 
+
+
+
+function playPause1() {
+    var music1 = document.getElementById('music1');
+    var music1_btn = document.getElementById('music_btn1');
+    if (music1.paused){
+        music1.play();
+    }
+    else{
+        music1.pause();
+    }
+}
+function playPause2() {
+    var music2 = document.getElementById('music2');
+    var music2_btn = document.getElementById('music_btn2');
+    if (music2.paused){
+        music2.play();
+    }
+    else{
+        music2.pause();
+    }
+}
+function playPause3() {
+    var music3 = document.getElementById('music3');
+    var music3_btn = document.getElementById('music_btn3');
+    if (music3.paused){
+        music3.play();
+    }
+    else{
+        music3.pause();
+    }
+}
+function playPause4() {
+    var music4 = document.getElementById('music4');
+    var music4_btn = document.getElementById('music_btn4');
+    if (music4.paused){
+        music4.play();
+    }
+    else{
+        music4.pause();
+    }
+}
+function playPause5() {
+    var music5 = document.getElementById('music5');
+    var music5_btn = document.getElementById('music_btn5');
+    if (music5.paused){
+        music5.play();
+    }
+    else{
+        music5.pause();
+    }
+}
+$(document).ready(function(){
+  $("#but11").click(function(){
+    $("#bk1").fadeToggle(1000);
+  });
+});
+
+$(document).ready(function(){
+  $("#but12").click(function(){
+    $("#bk2").fadeToggle(1000);
+  });
+});
+
+$(document).ready(function(){
+  $("#but13").click(function(){
+    $("#bk3").fadeToggle(1000);
+  });
+});
+
+$(document).ready(function(){
+  $("#but14").click(function(){
+    $("#bk4").fadeToggle(1000);
+  });
+});
+
+var mySwiper = new Swiper('#sImg',{
+effect : 'coverflow',
+slidesPerView: 3,
+centeredSlides: true,
+coverflow: {
+            rotate: 30,
+            stretch: 10,
+            depth: 60,
+            modifier: 2,
+            slideShadows : true
+        }
+})
+$(document).ready(function(){
+  $("#img1").click(function(){
+  $("#Img1").slideToggle();
+  });
+});
+$(".imgbook").hover(
+  function () {
+    $(this).find("span:last").remove();
+  }
+);
+ 
+$(".imgbook").hover(function(){$(this).fadeOut(50);$(this).fadeIn(200);});
+
+/*手机版专辑闪动事件*/
+$(".s").hover(
+  function () {
+    $(this).find("span:last").remove();
+  }
+);
+ 
+$(".s").hover(function(){$(this).fadeOut(0);$(this).fadeIn(10);});
+
+var mySwiper = new Swiper('#song',{
+			loop : true,
+			slidesPerView : 'auto',
+			loopedSlides :2,
+			})
+
+</script>
+</body>
+</html>
